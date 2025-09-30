@@ -1,7 +1,7 @@
 <h1>This directory contains the R scripts used for Mavrommatis et al. </h1>
  
- Pre-print URL: https://www.medrxiv.org/content/10.1101/2025.07.14.25331494v1
- Publihsed paper URL: 
+ Pre-print URL: https://www.medrxiv.org/content/10.1101/2025.07.14.25331494v1 <br>
+ Published paper URL: 
 
 **Script1_data_prep_25Aug2025.r** <br>
 Includes data cleaning steps to calculate the time to censoring, impute missing values for the covariates using KNN, and calculates age acceleration residuals that additionally adjust for estimated white blood cell proportions and relatedness (kinship matrix).
