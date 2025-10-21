@@ -24,7 +24,7 @@ Code to generate average logHR for each clock across all 174 diseases and a comp
 **Tables_and_Figures_code_25Aug2025.r** <br>
 Code to generate Supplementary Tables and Figures 1 and 2.
 
-**R Package versions**
+**R Package versions** <br>
 For scripts 1-4 analyses were run on an HPC using R version 4.4.2 and the following packages:
 tidyr (1.3.1), dplyr (1.1.4), Matrix (1.7-1), readxl (1.4.3), pROC (1.19.0.1), survival (3.8-3), EpiDISH (2.22.0), impute (1.80.0) <br>
 
