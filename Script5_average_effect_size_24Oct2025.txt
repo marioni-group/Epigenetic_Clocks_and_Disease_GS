@@ -1,0 +1,19 @@
+### aveage logHR by clock analysis ### 
+
+library("readxl")
+d <- read_excel("Supplementary_Tables_25June2025.xlsx", sheet = 3)
+d1 <- as.data.frame(d)  
+d1$logHR <- log(d1$HR)
+
+d2 <- d1[-(which(d1$Disease == "Mortality")),]
+
+library(dplyr)
+
+result <- d2 %>%
+  group_by(Clock) %>%
+  summarise(
+    mean_value = mean(logHR, na.rm = TRUE),
+    sd_value = sd(logHR, na.rm = TRUE)
+  )
+
+out <- as.data.frame(result)
